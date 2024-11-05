@@ -1,11 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Esemenynaptar</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <div class="calendar">
+        <div class="header">
+            <button id="prev">Elore</button>
+            <h2 id="monthYear"></h2>
+            <button id="next">Kovetkezo</button>
+        </div>
+        <div class="day-names">
+            <div>Hetfo</div>
+            <div>Kedd</div>
+            <div>Szerda</div>
+            <div>Csut</div>
+            <div>Pent</div>
+            <div>Szombat</div>
+            <div>Vasarnap</div>
+        </div>
+        <div class="days" id="days"></div>
+        <div class="event-form">
+            <input type="text" id="eventInput" placeholder="Uj esemeny">
+            <button id="addEvent">Hozzadas</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
