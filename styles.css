@@ -3,6 +3,9 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .calendar {
@@ -10,7 +13,12 @@ body {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    width: 400px;  
+    height: 500px; 
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .header {
@@ -34,6 +42,7 @@ body {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     margin: 20px 0;
+    flex-grow: 1;
 }
 
 .day {
@@ -41,6 +50,10 @@ body {
     border: 1px solid #ddd;
     position: relative;
     cursor: pointer;
+    height: 60px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .today {
@@ -65,8 +78,9 @@ body {
 }
 
 .event {
-    background: #e9ecef;
+    background: white;
     margin: 5px 0;
     padding: 5px;
     border-radius: 3px;
+    font-size: 12px;  
 }
